@@ -1,14 +1,23 @@
-function sendMail(){
-    var tempParams = {
-        from_name: document.getElementById("nam").value,
+function sendEmail(){
+    var params={
+        name: document.getElementById("nam").value,
         email_id: document.getElementById("mal").value,
-        subject_sender: document.getElementById("sub").value,
-        message: document.getElementById("comment").value,
+        subject: document.getElementById("sub").value,
+        message: document.getElementById("comment").value
     };
-    emailjs.send('{{service_id}}', '{{template_id}}', tempParams)
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
+
+    const serviceID = "service_cwb1mpn";
+    const templateID = "template_rzkf42p";
+
+    emailjs.send(serviceID,templateID,params)
+    .then(
+        res=>{
+            document.getElementById("nam").value="";
+            document.getElementById("mal").value="";
+            document.getElementById("sub").value="";
+            document.getElementById("comment").value="";
+            alert("Message sent successfully")
+            }
+        )
+    .catch((err)=>console.log(err));
 }
