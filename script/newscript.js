@@ -12,10 +12,6 @@ function sendEmail(){
     emailjs.send(serviceID,templateID,params)
     .then(
         res=>{
-            document.getElementById("nam").value="";
-            document.getElementById("mal").value="";
-            document.getElementById("sub").value="";
-            document.getElementById("comment").value="";
             alert("Message sent successfully")
             }
         )
