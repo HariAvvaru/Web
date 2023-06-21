@@ -6,6 +6,15 @@
     position:relative;
 }
 
+/*Remove scroll bar*/
+body {
+    overflow: auto;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
 
 /* text css above hero image*/
 .hero_title {
