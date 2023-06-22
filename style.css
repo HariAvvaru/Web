@@ -328,3 +328,9 @@ body {
       flex-direction: column;
       align-items: center;
     }
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
