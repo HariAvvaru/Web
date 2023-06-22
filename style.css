@@ -1,12 +1,13 @@
 /* hero background image */
 .bgimage {
-    height:100vh;
-    background: url('images/study.jpg');
-    background-size:cover;
-    position:relative;
+    height: 100vh;
+    background-image: url('images/study.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
 }
 
-/*Remove scroll bar*/
 body {
     overflow: auto;
   }
@@ -14,7 +15,6 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
-
 
 /* text css above hero image*/
 .hero_title {
@@ -113,11 +113,6 @@ body {
     width: 100%;
 }
 
-
-
-.navbar.scrolled {
-    background-color: black;
-  }
 
 .styled-table {
     border-collapse: collapse;
@@ -236,7 +231,7 @@ body {
 
 /*Button*/
 
-/* CSS */
+    /* CSS */
  /*   .button-3 {
       appearance: none;
       background-color: #2ea44f;
@@ -288,7 +283,7 @@ body {
       box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
     }*/
     /*Resume button effect*/
-    #res {
+    .button {
         --width: 100px;
         --height: 35px;
         --tooltip-height: 35px;
@@ -306,7 +301,7 @@ body {
         transition: background 0.3s;
       }
       
-      #res::before {
+      .button::before {
         position: absolute;
         content: attr(data-tooltip);
         width: var(--tooltip-width);
@@ -320,7 +315,7 @@ body {
         left: calc(50% - var(--tooltip-width) / 2);
       }
       
-      #res::after {
+      .button::after {
         position: absolute;
         content: '';
         width: 0;
@@ -331,7 +326,7 @@ body {
         bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
       }
       
-      #res::after,#res::before {
+      .button::after,.button::before {
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s;
@@ -343,7 +338,7 @@ body {
         justify-content: center;
       }
       
-      #wra,.text,.icon {
+      .button-wrapper,.text,.icon {
         overflow: hidden;
         position: absolute;
         width: 100%;
@@ -373,28 +368,28 @@ body {
         height: 24px;
       }
       
-      #res:hover {
+      .button:hover {
         background: #2ba8fb;
       }
       
-      #res:hover .text {
+      .button:hover .text {
         top: -100%;
       }
       
-      #res:hover .icon {
+      .button:hover .icon {
         top: 0;
       }
       
-      #res:hover:before,#res:hover:after {
+      .button:hover:before,.button:hover:after {
         opacity: 1;
         visibility: visible;
       }
       
-      #res:hover:after {
+      .button:hover:after {
         bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 10px);
       }
       
-      #res:hover:before {
+      .button:hover:before {
         bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
       }
       
@@ -426,9 +421,8 @@ body {
         transform: scale(0.98);
       }
 
-
-     .bkn{
-        width: 9em;
+    .bkn {
+        width: 7em;
         height: 3em;
         border-radius: 30em;
         font-size: 15px;
@@ -439,10 +433,9 @@ body {
         overflow: hidden;
         z-index: 1;
         box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-
     }
 
-    .bkn::before{
+    .bkn::before {
         content: '';
         width: 0;
         height: 3em;
@@ -451,26 +444,11 @@ body {
         top: 0;
         left: 0;
         background-image: linear-gradient(to right, #0f98d8 0%, #f9f047 100%);
-        transition: .5s ease;
+        transition: width .5s ease;
         display: block;
         z-index: -1;
     }
-    .bkn:hover::before{
+
+    .bkn:hover::before {
         width: 9em;
     }
-
-    .bkn{
-        align-items: center;
-    }
-/*Form alignment*/
-.form-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-.contactContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
