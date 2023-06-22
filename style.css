@@ -322,3 +322,9 @@ body {
     .bkn{
         align-items: center;
     }
+/*Form alignment*/
+.form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
