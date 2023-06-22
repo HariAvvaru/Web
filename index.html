@@ -84,15 +84,24 @@
         </div>
         
         <div class="row mt-1 justify-content-center">
-          <div class="col-md-1">
-            <a href="Hari_Avvaru_Resume.pdf" target="_blank">
-              <button class="button-3" type="button" id="but">Resume</button>
-            </a>
+            <div class="col-md-1">
+              <a href="Hari_Avvaru_Resume.pdf" download="Resume" target="_blank">
+                <div class="button" data-tooltip="Size: 112kb">
+                  <div class="button-wrapper">
+                    <div class="text">Resume</div>
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-1" style="margin-left: 30px;">
+              <button class="button-3" type="button" id="resume-button">Resume Video</button>
+            </div>
           </div>
-          <div class="col-md-1" style="margin-left: 15px;">
-            <button class="button-3" type="button" id="resume-button">Resume Video</button>
-          </div>
-        </div>
 
         <div id="video-container">
           <video id="video-player" controls>
