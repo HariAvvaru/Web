@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Hari Avvaru </title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
   <!-- bootstrap CDN -->
@@ -12,86 +13,137 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-   <!-- SWEET ALERT -->
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init("cczTzHn6kTRLvg8EK");
-   })();
-</script>
+    })();
+  </script>
+  <!--Form align-->
+  <style>
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contactContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 
-<body>
-    <!-- load javascript after loading all html content -->
-    <script src="script/newscript.js"></script>
-   <nav class="navbar navbar-expand-lg fixed-top  navbar-light bg-light">
-   <div class="container-fluid">
-    <i class="material-icons">school</i>
-    <a class="navbar-brand" href="#">Hari Avvaru</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<body oncontextmenu="return false">
+  <!-- load javascript after loading all html content -->
+  <script src="script/newscript.js"></script>
+  <!-- <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+  <div class="container">
+    <a class="navbar-brand" href="#">Hari</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#interests">Interests</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#project">Projects</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
-</nav>
-
-   <!-- main banner -->
-   <section class="bgimage" id="home">
+</nav>-->
+  <nav class="navbar navbar-expand-lg fixed-top  navbar-light bg-light">
     <div class="container-fluid">
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="hero_title">Hi, I'm Avvaru Hari Sai Babu</h2>
-            <p class="hero_desc">I am a Software Developer</p>
+      <i class="material-icons">school</i>
+      <a class="navbar-brand" href="#">Hari Avvaru</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#interests">Interests</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#project">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
-        </div>
-    </div>
-</section>
-
-  <!-- about section-->
-<section id="about" >
-  <div class="container mt-4 pt-4" id="mmsm">
-    <div class="row mt-4">
-      <div class="col-lg-3">
-        <img src="images/hari pass.jpeg" class="imageAboutPage" alt="">
       </div>
+    </div>
+  </nav>
 
-      <div class="col-lg-8" id="me">
-        <h1 class="text-center">About Me</h1>
-        <p id="col">I am A. Hari Sai Babu and I'm a Developer seeking an opportunity to be a part of a software development organization and utilize my knowledge, skills, and expertise to contribute to the organization and professional brilliance and to learn more with the passage of time from all types of situations and circumstances.</p>
-        
-        <div class="row mt-3">
-          <div class="col-md-7" id="col">
-            <ul>
-              <li>Name: Avvaru Hari Sai Babu</li>
-              <li>Age: 20</li>
-              <li>Designation: Student</li>
-            </ul>
-          </div>
+  <!-- main banner -->
+  <section class="bgimage" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title">Hi, I'm Avvaru Hari Sai Babu</h2>
+          <p class="hero_desc">I am a Software Developer</p>
         </div>
-        
-        <div class="row mt-1 justify-content-center">
+      </div>
+    </div>
+  </section>
+  <!-- about section-->
+  <section id="about">
+    <div class="container mt-4 pt-4" id="mmsm">
+      <div class="row mt-4">
+        <div class="col-lg-3">
+          <img src="images/hari pass.jpeg" class="imageAboutPage" alt="">
+        </div>
+
+        <div class="col-lg-8" id="me">
+          <h1 class="text-center">About Me</h1>
+          <p id="col">I am A. Hari Sai Babu and I'm a Developer seeking an opportunity to be a part of a software
+            development organization and utilize my knowledge, skills, and expertise to contribute to the organization
+            and professional brilliance and to learn more with the passage of time from all types of situations and
+            circumstances.</p>
+
+          <div class="row mt-3">
+            <div class="col-md-7" id="col">
+              <ul>
+                <li>Name: Avvaru Hari Sai Babu</li>
+                <li>Age: 20</li>
+                <li>Designation: Student</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row mt-1 justify-content-center">
             <div class="col-md-1">
               <a href="Hari_Avvaru_Resume.pdf" download="Resume" target="_blank">
-                <div class="button" id="res" data-tooltip="Size: 112kb">
-                  <div class="button-wrapper" id="wra">
+                <div class="button" data-tooltip="Size: 112kb">
+                  <div class="button-wrapper">
                     <div class="text">Resume</div>
-                    <span class="icon" id="ic">
-                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path>
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                        </path>
                       </svg>
                     </span>
                   </div>
@@ -102,45 +154,56 @@
               <button class="button-3" type="button" id="resume-button">Resume Video</button>
             </div>
           </div>
+          <!--<a href="Hari_Avvaru_Resume.pdf" download="Resume" target="_blank">
+                <button class="button-3" type="button" id="but">Resume</button>
+              </a>-->
 
-        <div id="video-container">
-          <video id="video-player" controls>
-            <source src="https://drive.google.com/uc?export=download&id=1IZWLF-BBHNmkVuxTHvuRJhGffnWdypZM" type="video/mp4">
-          </video>
-          
-          <i id="close-icon" class="fas fa-times-circle" style="vertical-align: top;"></i>
+          <div id="video-container">
+            <video id="video-player" controls>
+              <source src="https://drive.google.com/uc?export=download&id=1IZWLF-BBHNmkVuxTHvuRJhGffnWdypZM"
+                type="video/mp4">
+            </video>
+
+            <i id="close-icon" class="fas fa-times-circle" style="vertical-align: top;"></i>
+          </div>
         </div>
-      
-        <script>
-          var resumeButton = document.getElementById("resume-button");
-          var videoContainer = document.getElementById("video-container");
-          var videoPlayer = document.getElementById("video-player");
-          var closeIcon = document.getElementById("close-icon");
-      
-          resumeButton.addEventListener("click", function() {
-            videoContainer.style.display = "block";
-            videoPlayer.pause();
-          });
-      
-          closeIcon.addEventListener("click", function() {
-          videoPlayer.pause();
-          videoPlayer.currentTime = 0;
-          videoContainer.style.display = "none";
-          });
-        </script>
-</section>
+      </div>
+    </div>
+    <script>
+      var resumeButton = document.getElementById("resume-button");
+      var videoContainer = document.getElementById("video-container");
+      var videoPlayer = document.getElementById("video-player");
+      var closeIcon = document.getElementById("close-icon");
+
+      resumeButton.addEventListener("click", function () {
+        videoContainer.style.display = "block";
+        videoPlayer.pause();
+      });
+
+      closeIcon.addEventListener("click", function () {
+        videoPlayer.pause();
+        videoPlayer.currentTime = 0;
+        videoContainer.style.display = "none";
+      });
+    </script>
+  </section>
+
+
 
   <!-- interests section-->
-  <section id="interests" >
+  <section id="interests">
+
     <div class="container">
       <h1 class="text-center">Interests</h1>
+
       <div class="row" id="card-row">
         <div class="col-lg-4 mt-4">
           <div class="card servicesText">
             <div class="card-body" id="txtcard">
               <i class="material-icons" id="mat">computer</i>
               <h4 class="card-title mt-3">Website Development</h4>
-              <p class="card-text mt-3">Interested in developing interactive and user-friendly websites to serve people across the globe.<br><br></p>
+              <p class="card-text mt-3">Interested in developing interactive and user-friendly websites to serve people
+                across the globe.<br><br></p>
             </div>
           </div>
         </div>
@@ -149,7 +212,8 @@
             <div class="card-body" id="txtcard">
               <i class="fab fa-android" id="mat"></i>
               <h4 class="card-title mt-3">Android Development</h4>
-              <p class="card-text mt-3">I have a keen interest in developing Android applications and exploring the latest trends and technologies in the mobile app development industry.</p>
+              <p class="card-text mt-3">I have a keen interest in developing Android applications and exploring the
+                latest trends and technologies in the mobile app development industry.</p>
             </div>
           </div>
         </div>
@@ -158,109 +222,153 @@
             <div class="card-body" id="txtcard">
               <i class="material-icons" id="mat">person</i>
               <h4 class="card-title mt-3">Volunteering</h4>
-              <p class="card-text mt-3">I Volunteer in Make A Difference(MAD) as a Fundraising volunteer to help children get served with basic needs in Children Care Institutions.</p>
+              <p class="card-text mt-3">I Volunteer in Make A Difference(MAD) as an Fundraising volunteer to help
+                children get served with basic needs in Children Care Institutions.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-      
- <!-- skills section-->
- <section id="skills" >
-  <div class="container">
-    <h1 class="text-center">Skills</h1>
+  <!-- skills section-->
+  <section id="skills">
+    <div class="container">
+      <h1 class="text-center">Skills</h1>
       <table class="styled-table">
         <tbody>
-        <tr>
-          <td><b>Programming Languages:</b></td>
-          <td><p class="content">C, Core Java with J2EE, Python</p></td>
-        </tr>
-        <tr>
-          <td><b>Web Basics:</b></td>
-          <td><p class="content">HTML, CSS, Javascript, XML, Typescript, JQuery</p></td>
-        </tr>
-        <tr>
-          <td><b>Technologies:</b></td>
-          <td><p class="content">Java Servlets, Java Server Pages</p></td>
-        </tr>
-        <tr>
-          <td><b>Database / Storage System:</b></td>
-          <td><p class="content">Oracle 11g, MySql, Firebase, SQLite</p></td>
-        </tr>
-        <tr>
-          <td><b>IDEs:</b></td>
-          <td><p class="content">Eclipse IDE 2023-03, Android Studio (Flamingo), Spyder 5.4.3, Visual Studio Code 1.78, Sublime Text 4, Anaconda Navigator, Embercadero Dev C++, Python 3.11.0</p></td>
-        </tr>
-        <tr>
-          <td><b>Application Servers:</b></td>
-          <td><p class="content">Apache Tomcat 9.0, XAMPP</p></td>
-        </tr>
-        <tr>
-          <td><b>Open-source Software:</b></td>
-          <td><p class="content">MS Office, Project Libre, Capcut, Visual Paradigm, Adobe Photoshop, Burp Suite, Oracle VM Virtual Box, QGIS 3.30.1, Sas Planet Tool</p></td>
-        </tr>
-        <tr>
-          <td><b>Core Competencies:</b></td>
-          <td><p class="content">Data Structures and Algorithms, Computer Networks, Database Management Systems, Machine Learning, Android development, Artificial Intelligence, Operating Systems, Software Engineering, OOPs, Computer Networks, Cryptography and Network Security</p></td>
-        </tr>
-        <tr>
-          <td><b>Management Skills:</b></td>
-          <td><p class="content">Problem-Solving, Communication Skills, Business Management</p></td>
-        </tr>
-        <tr>
-          <td><b>Languages Known:</b></td>
-          <td><p class="content">Fluent in Telugu and English, Conversational Proficiency in Hindi.</p></td>
-        </tr>
-      </tbody>
+          <tr>
+            <td><b>Programming Languages:</b></td>
+            <td>
+              <p class="content">C, Core Java with J2EE, Python</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Web Basics:</b></td>
+            <td>
+              <p class="content">HTML, CSS, Javascript, XML, Typescript, JQuery</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Technologies:</b></td>
+            <td>
+              <p class="content">Java Servlets, Java Server Pages</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Database / Storage System:</b></td>
+            <td>
+              <p class="content">Oracle 11g, MySql, Firebase, SQLite</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>IDEs:</b></td>
+            <td>
+              <p class="content">Eclipse IDE 2023-03, Android Studio (Flamingo), Spyder 5.4.3, Visual Studio Code 1.78,
+                Sublime Text 4, Anaconda Navigator, Embercadero Dev C++, Python 3.11.0</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Application Servers:</b></td>
+            <td>
+              <p class="content">Apache Tomcat 9.0, XAMPP</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Open-source Software:</b></td>
+            <td>
+              <p class="content">MS Office, Project Libre, Capcut, Visual Paradigm, Adobe Photoshop, Burp Suite, Oracle
+                VM Virtual Box, QGIS 3.30.1, Sas Planet Tool</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Core Competencies:</b></td>
+            <td>
+              <p class="content">Data Structures and Algorithms, Computer Networks, Database Management Systems, Machine
+                Learning, Android development, Artificial Intelligence, Operating Systems, Software Engineering, OOPs,
+                Computer Networks, Cryptography and Network Security</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Management Skills:</b></td>
+            <td>
+              <p class="content">Problem-Solving, Communication Skills, Business Management</p>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Languages Known:</b></td>
+            <td>
+              <p class="content">Fluent in Telugu and English; Conversational Proficiency in Hindi</p>
+            </td>
+          </tr>
+        </tbody>
       </table>
-   </div>
-</section>
-      
-     <!--Projects Section-->
-<section id="project" >
-  <div class="container">
-    <h1 id="h">Projects</h1>
-    <div class="row">
-      <h3>Chat Application(Full - Stack)</h3>
-      <ul id="mr">
-        <li>Facilitated accessible Communication in Chat Application to facilitate easy communication for users to send and receive messages in real-time</li>
-        <li>Technologies used: - React, Node, Express, Stream-Chat (API + Database), bcrypt (for encrypting the ural network plain text passwords)</li>
-      </ul>
+      <!--      
+      <p id="pro"><b>Programming Languages:</b> C, Core Java with J2EE, Python</p>
+      <p id="pro"><b>Web Basics:</b> HTML, CSS, Javascript, XML, Typescript, JQuery</p>
+      <p id="pro"><b>Technologies:</b> Java Servlets, Java Server Pages</p>
+      <p id="pro"><b>Database / Storage System:</b> Oracle 11g, MySql, Firebase, SQLite</p>
+      <p id="pro"><b>IDEs:</b> Eclipse IDE 2023-03, Android Studio (Flamingo), Spyder 5.4.3, Visual Studio Code 1.78, Sublime Text 4, Anaconda Navigator, Embercadero Dev C++, Python 3.11.0</p>
+      <p id="pro"><b>Application Servers:</b> Apache Tomcat 9.0, XAMPP</p>
+      <p id="pro"><b>Open-source Software:</b> MS Office, Project Libre, Capcut, Visual Paradigm, Adobe Photoshop, Burp Suite, Oracle VM Virtual Box, QGIS 3.30.1, Sas Planet Tool</p>
+      <p id="pro"><b>Core Competencies:</b> Data Structures and Algorithms, Computer Networks, Database Management Systems, Machine Learning, Android development, Artificial Intelligence, Operating Systems, Software Engineering, OOPs, Computer Networks, Cryptography and Network Security</p>
+      <p id="pro"><b>Management Skills:</b>Problem-Solving, Communication Skills, Business Management</p>
+      <p id="pro"><b>Languages Known:</b>Fluent in Telugu and English; Conversational Proficiency in Hindi</p>
+    -->
     </div>
-    <div class="row">
-      <h3>Payment Receipt</h3>
-      <ul id="mr">
-        <li>Displaying the payment receipt of a Customer in a table format developed using Java concepts.</li>
-        <li> Technologies used:-Java</li>
-      </ul>
+  </section>
+  <section id="project">
+    <div class="container">
+      <h1 id="h">Projects</h1>
+      <div class="row">
+        <h3>Chat Application(Full - Stack)</h3>
+        <ul id="mr">
+          <li>Facilitated accessible Communication in Chat Application to facilitate easy communication for users to
+            send and receive messages in real-time</li>
+          <li>Technologies used: - React, Node, Express, Stream-Chat (API + Database), bcrypt (for encrypting the ural
+            network wplain text passwords)</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Payment Receipt</h3>
+        <ul id="mr">
+          <li>Displaying the payment receipt of a Customer in a table format which is developed using java concepts.
+          </li>
+          <li> Technologies used:-Java</li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>STUMART</h3>
+        <ul id="mr">
+          <li>An application that enables people of VRSEC to sell and buy their unused goods & reduce wastage and this
+            enables sellers to make some money to their goods</li>
+          <li> Technologies used:- Android Studio with help of Java and XML languages,Firebase Database</li>
+          <li>Playstore Link: <a href="https://play.google.com/store/apps/details?id=hari.app.stmart" target="_blank">
+              <i class="fab fa-google-play" id="play"></i>
+            </a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Dehazing of Multispectral Remote Sensing Images using CNN with ResNet</h3>
+        <ul id="mr">
+          <li>The project aims to dehaze multispectral remote sensing images using CNN with residual architecture,
+            enhancing the accuracy of physical characterstics determination through deep learning techniques.</li>
+          <li>Haze is caused due to presence of fine dust, smoke, or light vapours causing lack of transparency of the
+            air. This creates a problem as the image regions affected by haze suffer lack of contrast resulting in
+            difficulty of interpretation.</li>
+          <li>For efficiently determining the physical characteristics of the image a CNN model with Relu Blocks is
+            trained with the haze and haze-free dataset of kondapalli region which predicts an haze-free image of an
+            haze image. </li>
+          <li> Technologies used:- Jupyter Notebook, Sas Planet Tool, Python Programming Language</li>
+        </ul>
+      </div>
+
     </div>
-    <div class="row">
-      <h3>STUMART</h3>
-      <ul id="mr">
-        <li>An application that enables people of VRSEC to sell and buy their unused goods & reduce wastage and this enables sellers to make some money from their goods</li>
-        <li> Technologies used:- Android Studio with the help of Java and XML languages, Firebase Database</li>
-        <li>Playstore Link: <a href="https://play.google.com/store/apps/details?id=hari.app.stmart" target="_blank">
-          <i class="fab fa-google-play" id="play"></i>
-        </a></li>
-      </ul>
-    </div>
-    <div class="row">
-      <h3>Dehazing of Multispectral Remote Sensing Images using CNN with ResNet</h3>
-      <ul id="mr">
-        <li>The project aims to dehaze multispectral remote sensing images using CNN with residual architecture, enhancing the accuracy of physical characteristics determination through deep learning techniques.</li>
-        <li>Haze is caused due to the presence of fine dust, smoke, or light vapors causing a lack of transparency in the air. This creates a problem as the image regions affected by haze suffer a lack of contrast resulting in difficulty in interpretation.</li>
-        <li>For efficiently determining the image's physical characteristics, a CNN model with Relu Blocks is trained with the haze and haze-free dataset of the Kondapalli region which predicts a haze-free image of a haze image. </li>
-        <li> Technologies used:- Jupyter Notebook, Sas Planet Tool, Python Programming Language</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
   <!-- contact section-->
-    <section id="contact">
+  <section id="contact">
     <h1 class="text-center">Contact Me</h1>
     <div class="container mt-3 contactContent ">
       <div class="row mt-2">
@@ -279,7 +387,8 @@
               </tr>
               <tr>
                 <td><i class="material-icons" id="matt">mail</i></td>
-                <td style="padding: 10px;"><b>Email</b><br><a href="mailto:hariavvaru944@gmail.com">hariavvaru944@gmail.com</a></td>
+                <td style="padding: 10px;"><b>Email</b><br><a
+                    href="mailto:hariavvaru944@gmail.com">hariavvaru944@gmail.com</a></td>
               </tr>
               <tr>
                 <td><i class="material-icons" id="matt">phone</i></td>
@@ -288,8 +397,8 @@
             </tbody>
           </table>
         </div>
-      
-        
+
+
         <div class="col-lg-5">
           <h5 id="hh">Send Your Query</h5>
           <!-- form fields -->
@@ -299,37 +408,40 @@
               <input type="email" class="form-control mt-3" placeholder="Email" id="mal" required>
               <input type="text" class="form-control mt-3" placeholder="Subject" id="sub" required>
               <div class="mb-3 mt-3">
-                <textarea class="form-control" rows="3" cols="90" id="comment" name="text" placeholder="Message" required></textarea>
+                <textarea class="form-control" rows="3" cols="90" id="comment" name="text" placeholder="Message"
+                  required></textarea>
               </div>
               <button class="bkn" id="bttn" type="submit">Submit</button>
             </div>
           </form>
         </div>
       </div>
-      
+
     </div>
   </section>
-    <!--<div class="col-lg-3">
-              <img src="images/lo.jpg" alt="Logo" style="float: right; margin-left: 5px; margin-right: 10px;">
-            </div>-->      
 
 
- <!-- footer section-->
- <footer id="footer">
-  <div class="container-fluid">
-    <span>
-    Created By <a href="#">Avvaru Hari Sai Babu</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
-      <!-- social media icons -->
-      <div>
+  <!-- footer section-->
+  <footer id="footer">
+    <div class="container-fluid">
+      <span>
+        Created By <a href="#">Avvaru Hari Sai Babu</a> | <span class="far fa-copyright"> </span>
+        <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <!-- social media icons -->
+        <div>
           <a href="https://www.instagram.com/hari__2018/" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://twitter.com/HariAvvaru1" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/hari-sai-babu-avvaru-5a32b7202/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/hari-sai-babu-avvaru-5a32b7202/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
           <a href="https://github.com/HariAvvaru" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.hackerrank.com/cse_208W1A0507?hr_r=1" target="_blank"><i class="fab fa-hackerrank"></i></a>
+          <a href="https://www.hackerrank.com/cse_208W1A0507?hr_r=1" target="_blank"><i
+              class="fab fa-hackerrank"></i></a>
           <a href="https://leetcode.com/Hari944-_/" target="_blank"><i class="fab fa-leetcode"></i></a>
-      </div>
-    </span>
-  </div>
-</footer>
+        </div>
+      </span>
+    </div>
+  </footer>
+
 </body>
+
 </html>
