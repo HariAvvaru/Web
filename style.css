@@ -132,7 +132,7 @@ body {
 }
 
 /*Software Developer Text effect and animation*/
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+/*@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 
 .container-fluid .hero_desc {
@@ -161,13 +161,57 @@ body {
 
 /* cursor animations */
 
-@keyframes animated-cursor {
+/*@keyframes animated-cursor {
   from {
     border-right-color: rgba(21, 140, 209, 0.75);
   }
 
   to {
     border-right-color: transparent;
+  }
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+.container-fluid .hero_desc {
+  border-right: solid 3px rgba(0, 191, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: rgba(255, 255, 255, .70);
+  width: 472px; /* Set a default width for the animation */
+}
+
+.container-fluid .hero_desc {
+  animation: animated-text 4.5s steps(29, end) 1s 1 normal both,
+             animated-cursor 650ms steps(29, end) 5s 1 normal both;
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Change width to 100% */
+  }
+}
+
+/* cursor animations */
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(21, 140, 209, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container-fluid .hero_desc {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    width: 90%; /* Use a percentage width instead of fixed width */
   }
 }
 
