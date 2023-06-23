@@ -44,36 +44,6 @@
 <body oncontextmenu="return false">
   <!-- load javascript after loading all html content -->
   <script src="script/newscript.js"></script>
-  <!-- <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-  <div class="container">
-    <a class="navbar-brand" href="#">Hari</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#project">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>-->
   <nav class="navbar navbar-expand-lg fixed-top  navbar-light bg-light">
     <div class="container-fluid">
       <i class="material-icons">school</i>
@@ -97,18 +67,33 @@
 
   <!-- main banner -->
   <section class="bgimage" id="home">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <!-- Background & animion & navbar & title -->
     <div class="container-fluid">
+      <!-- Background animtion-->
+      <div class="background">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h1 class="wel">Welcome</h1>
           <h2 class="hero_title">Hi, I'm Avvaru Hari Sai Babu</h2>
           <p class="hero_desc">I am a Software Developer</p>
+          <a class="no-click" href="#about"><button class="kls"> Know more</button></a>
+          <a class="no-click" href="#contact"><button class="kls">Contact me</button></a>
         </div>
       </div>
     </div>
   </section>
   <!-- about section-->
   <section id="about">
-    <div class="container mt-4 pt-4" id="mmsm">
+    <div class="container mt-4 pt-4" id="abtalign">
       <div class="row mt-4">
         <div class="col-lg-3">
           <img src="images/hari pass.jpeg" class="imageAboutPage" alt="">
@@ -116,13 +101,13 @@
 
         <div class="col-lg-8" id="me">
           <h1 class="text-center">About Me</h1>
-          <p id="col">I am A. Hari Sai Babu and I'm a Developer seeking an opportunity to be a part of a software
+          <p id="abttext">I am A. Hari Sai Babu and I'm a Developer seeking an opportunity to be a part of a software
             development organization and utilize my knowledge, skills, and expertise to contribute to the organization
             and professional brilliance and to learn more with the passage of time from all types of situations and
             circumstances.</p>
 
           <div class="row mt-3">
-            <div class="col-md-7" id="col">
+            <div class="col-md-7" id="abttext">
               <ul>
                 <li>Name: Avvaru Hari Sai Babu</li>
                 <li>Age: 20</li>
@@ -133,35 +118,38 @@
 
           <div class="row mt-1 justify-content-center">
             <div class="col-md-1">
-               <a href="Hari_Avvaru_Resume.pdf" download="Resume" target="_blank">
-                 <div class="button" data-tooltip="Size: 112kb">
-                <div class="button-wrapper">
-                  <div class="text">Resume</div>
+              <a href="Resume_Hari_Avvaru.pdf" download="Resume" target="_blank">
+                <div class="button" data-tooltip="Size: 112kb">
+                  <div class="button-wrapper">
+                    <div class="text">Resume</div>
                     <span class="icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                        </path>
+                      </svg>
                     </span>
-                    </a>
-                  </div>
-                </div>
-              <!--<a href="Hari_Avvaru_Resume.pdf" download="Resume" target="_blank">
-                <button class="button-3" type="button" id="but">Resume</button>
-              </a>-->
+              </a>
             </div>
-            <div class="col-md-1" style="margin-left: 30px;">
-              <button class="button-3" type="button" id="resume-button">Resume Video</button>
-            </div>
-          </div> 
-
-          <div id="video-container">
-            <video id="video-player" controls>
-              <source src="https://drive.google.com/uc?export=download&id=1IZWLF-BBHNmkVuxTHvuRJhGffnWdypZM"
-                type="video/mp4">
-            </video>
-
-            <i id="close-icon" class="fas fa-times-circle" style="vertical-align: top;"></i>
           </div>
         </div>
+        <div class="col-md-1" style="margin-left: 30px;">
+          <button class="button-3" type="button" id="resume-button">Resume Video</button>
+        </div>
       </div>
+
+      <div id="video-container">
+        <video id="video-player" controls>
+          <source src="https://drive.google.com/uc?export=download&id=1IZWLF-BBHNmkVuxTHvuRJhGffnWdypZM"
+            type="video/mp4">
+        </video>
+
+        <i id="close-icon" class="fas fa-times-circle" style="vertical-align: top;"></i>
+      </div>
+    </div>
+    </div>
     </div>
     <script>
       var resumeButton = document.getElementById("resume-button");
@@ -194,7 +182,7 @@
         <div class="col-lg-4 mt-4">
           <div class="card servicesText">
             <div class="card-body" id="txtcard">
-              <i class="material-icons" id="mat">computer</i>
+              <i class="material-icons" id="iconint">computer</i>
               <h4 class="card-title mt-3">Website Development</h4>
               <p class="card-text mt-3">Interested in developing interactive and user-friendly websites to serve people
                 across the globe.<br><br></p>
@@ -204,7 +192,7 @@
         <div class="col-lg-4 mt-4">
           <div class="card servicesText">
             <div class="card-body" id="txtcard">
-              <i class="fab fa-android" id="mat"></i>
+              <i class="fab fa-android" id="iconint"></i>
               <h4 class="card-title mt-3">Android Development</h4>
               <p class="card-text mt-3">I have a keen interest in developing Android applications and exploring the
                 latest trends and technologies in the mobile app development industry.</p>
@@ -214,7 +202,7 @@
         <div class="col-lg-4 mt-4">
           <div class="card servicesText">
             <div class="card-body" id="txtcard">
-              <i class="material-icons" id="mat">person</i>
+              <i class="material-icons" id="iconint">person</i>
               <h4 class="card-title mt-3">Volunteering</h4>
               <p class="card-text mt-3">I Volunteer in Make A Difference(MAD) as an Fundraising volunteer to help
                 children get served with basic needs in Children Care Institutions.</p>
@@ -296,26 +284,14 @@
           </tr>
         </tbody>
       </table>
-      <!--      
-      <p id="pro"><b>Programming Languages:</b> C, Core Java with J2EE, Python</p>
-      <p id="pro"><b>Web Basics:</b> HTML, CSS, Javascript, XML, Typescript, JQuery</p>
-      <p id="pro"><b>Technologies:</b> Java Servlets, Java Server Pages</p>
-      <p id="pro"><b>Database / Storage System:</b> Oracle 11g, MySql, Firebase, SQLite</p>
-      <p id="pro"><b>IDEs:</b> Eclipse IDE 2023-03, Android Studio (Flamingo), Spyder 5.4.3, Visual Studio Code 1.78, Sublime Text 4, Anaconda Navigator, Embercadero Dev C++, Python 3.11.0</p>
-      <p id="pro"><b>Application Servers:</b> Apache Tomcat 9.0, XAMPP</p>
-      <p id="pro"><b>Open-source Software:</b> MS Office, Project Libre, Capcut, Visual Paradigm, Adobe Photoshop, Burp Suite, Oracle VM Virtual Box, QGIS 3.30.1, Sas Planet Tool</p>
-      <p id="pro"><b>Core Competencies:</b> Data Structures and Algorithms, Computer Networks, Database Management Systems, Machine Learning, Android development, Artificial Intelligence, Operating Systems, Software Engineering, OOPs, Computer Networks, Cryptography and Network Security</p>
-      <p id="pro"><b>Management Skills:</b>Problem-Solving, Communication Skills, Business Management</p>
-      <p id="pro"><b>Languages Known:</b>Fluent in Telugu and English; Conversational Proficiency in Hindi</p>
-    -->
     </div>
   </section>
   <section id="project">
     <div class="container">
-      <h1 id="h">Projects</h1>
+      <h1 id="prohead">Projects</h1>
       <div class="row">
         <h3>Chat Application(Full - Stack)</h3>
-        <ul id="mr">
+        <ul id="prolist">
           <li>Facilitated accessible Communication in Chat Application to facilitate easy communication for users to
             send and receive messages in real-time</li>
           <li>Technologies used: - React, Node, Express, Stream-Chat (API + Database), bcrypt (for encrypting the ural
@@ -324,33 +300,33 @@
       </div>
       <div class="row">
         <h3>Payment Receipt</h3>
-        <ul id="mr">
-          <li>Displaying the payment receipt of a Customer in a table format developed using Java concepts.
+        <ul id="prolist">
+          <li>Displaying the payment receipt of a Customer in a table format which is developed using java concepts.
           </li>
           <li> Technologies used:-Java</li>
         </ul>
       </div>
       <div class="row">
         <h3>STUMART</h3>
-        <ul id="mr">
+        <ul id="prolist">
           <li>An application that enables people of VRSEC to sell and buy their unused goods & reduce wastage and this
-            enables sellers to make some money from their goods</li>
-          <li> Technologies used:- Android Studio with the help of Java and XML languages, Firebase Database</li>
+            enables sellers to make some money to their goods</li>
+          <li> Technologies used:- Android Studio with help of Java and XML languages,Firebase Database</li>
           <li>Playstore Link: <a href="https://play.google.com/store/apps/details?id=hari.app.stmart" target="_blank">
-              <i class="fab fa-google-play" id="play"></i>
+              <i class="fab fa-google-play" id="playicon"></i>
             </a></li>
         </ul>
       </div>
       <div class="row">
         <h3>Dehazing of Multispectral Remote Sensing Images using CNN with ResNet</h3>
-        <ul id="mr">
+        <ul id="prolist">
           <li>The project aims to dehaze multispectral remote sensing images using CNN with residual architecture,
-            enhancing the accuracy of physical characteristics determination through deep learning techniques.</li>
-          <li>Haze is caused due to presence of fine dust, smoke, or light vapors causing a lack of transparency of the
-            air. This creates a problem as the image regions affected by haze suffer a lack of contrast resulting in
-            the difficulty of interpretation.</li>
+            enhancing the accuracy of physical characterstics determination through deep learning techniques.</li>
+          <li>Haze is caused due to presence of fine dust, smoke, or light vapours causing lack of transparency of the
+            air. This creates a problem as the image regions affected by haze suffer lack of contrast resulting in
+            difficulty of interpretation.</li>
           <li>For efficiently determining the physical characteristics of the image a CNN model with Relu Blocks is
-            trained with the haze and haze-free dataset of the Kondapalli region which predicts a haze-free image of an
+            trained with the haze and haze-free dataset of kondapalli region which predicts an haze-free image of an
             haze image. </li>
           <li> Technologies used:- Jupyter Notebook, Sas Planet Tool, Python Programming Language</li>
         </ul>
@@ -372,20 +348,20 @@
           <table>
             <tbody>
               <tr>
-                <td><i class="material-icons" id="matt">person</i></td>
+                <td><i class="material-icons" id="maticoncontact">person</i></td>
                 <td style="padding: 10px;"><b>Name</b><br>Avvaru Hari Sai Babu</td>
               </tr>
               <tr>
-                <td><i class="material-icons" id="matt">location_on</i></td>
+                <td><i class="material-icons" id="maticoncontact">location_on</i></td>
                 <td style="padding: 10px;"><b>Address</b><br>Vijayawada, Andhra Pradesh<br>India</td>
               </tr>
               <tr>
-                <td><i class="material-icons" id="matt">mail</i></td>
+                <td><i class="material-icons" id="maticoncontact">mail</i></td>
                 <td style="padding: 10px;"><b>Email</b><br><a
                     href="mailto:hariavvaru944@gmail.com">hariavvaru944@gmail.com</a></td>
               </tr>
               <tr>
-                <td><i class="material-icons" id="matt">phone</i></td>
+                <td><i class="material-icons" id="maticoncontact">phone</i></td>
                 <td style="padding: 10px;"><b>Phone Number</b><br><a href="tel:+917386294677">7386294677</a></td>
               </tr>
             </tbody>
@@ -394,7 +370,7 @@
 
 
         <div class="col-lg-5">
-          <h5 id="hh">Send Your Query</h5>
+          <h5 id="senquery">Send Your Query</h5>
           <!-- form fields -->
           <form onsubmit="sendEmail(); reset(); return false;">
             <div class="form-container">
