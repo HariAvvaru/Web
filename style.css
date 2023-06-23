@@ -94,10 +94,9 @@ body {
 }
 
 /* Header content & title & button*/
-.no-click {
+.no-click, #texttb {
   cursor: text;
   text-decoration: none;
-
 }
 
 .container-fluid .wel {
@@ -184,8 +183,8 @@ body {
 }
 
 .container-fluid .hero_desc {
-  animation: animated-text 4.5s steps(29, end) 1s 1 normal both,
-             animated-cursor 650ms steps(29, end) 5s 1 normal both;
+  animation: animated-text 4s steps(29, end) 1s 1 normal both,
+             animated-cursor 650ms steps(29, end) 1s 1 normal both;
 }
 
 @keyframes animated-text {
@@ -214,6 +213,7 @@ body {
     width: 90%; /* Use a percentage width instead of fixed width */
   }
 }
+
 
 /* text css above hero image*/
 .hero_title {
@@ -530,6 +530,7 @@ body {
 #prolist {
   margin-left: 30px;
   font-size: 18px;
+  text-align: justify;
 }
 
 #playicon {
@@ -538,6 +539,10 @@ body {
 
 /*Icons color*/
 .fab {
+  color: #000000;
+}
+
+#texttb{
   color: #000000;
 }
 
