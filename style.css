@@ -6,9 +6,16 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+#navbarDropdownMenuLink{
+  color: rgb(159, 149, 149)
+}
+#navbarDropdownMenuLink:hover{
+  color: #000000;
+}
+
 /* ============= Animation background ========= */
 .background {
-  /*background: linear-gradient(132deg, #7b222e, #591BC5, #212335);*/
   background-image: linear-gradient(to right, #8360c3, #2ebf91);
   animation: Gradient 15s ease infinite;
   height: 100vh;
@@ -138,45 +145,6 @@ body {
   border-radius: 0;
 }
 
-/*Software Developer Text effect and animation*/
-/*@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
-
-.container-fluid .hero_desc {
-  border-right: solid 3px rgba(0, 191, 255, 0.75);
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  color: rgba(255, 255, 255, .70);
-}
-
-.container-fluid .hero_desc {
-  animation: animated-text 4.5s steps(29, end) 1s 1 normal both,
-    animated-cursor 650ms steps(29, end) 5s 1 normal both;
-}
-
-@keyframes animated-text {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 472px;
-  }
-}
-
-/* cursor animations */
-
-/*@keyframes animated-cursor {
-  from {
-    border-right-color: rgba(21, 140, 209, 0.75);
-  }
-
-  to {
-    border-right-color: transparent;
-  }
-}*/
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
@@ -491,55 +459,114 @@ body {
 
 /*Section4*/
 
-.styled-table {
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 250px;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+/* Variables */
+:root {
+  --base-spacing-unit: 24px;
+  --half-spacing-unit: calc(var(--base-spacing-unit) / 2);
+
+  --color-alpha: #1772FF;
+  --color-form-highlight: #EEEEEE;
+}
+
+/* Box Sizing */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Container */
+#tbb {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#txb{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
 }
 
-.styled-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
+/* Apply black background to the first column */
+.table-data:first-child {
+  flex: 0.3 1 0%;
   text-align: left;
+  width: 100%; 
+  color: rgb(14, 1, 1); 
+  text-transform: uppercase;
 }
 
-.styled-table td {
-
-  padding: 8px 12px;
-  vertical-align: middle;
+/* Apply normal styles to other columns */
+.table-row.odd-row .table-data:not(:first-child) {
+  flex: 1 1 20%;
+  text-align: left;
+  width: 100%;
+  background: var(--color-form-highlight);
 }
 
-.styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
+.table-row:nth-of-type(even) {
   background-color: #f3f3f3;
 }
 
-.styled-table tbody tr:last-of-type {
-  border-bottom: 1px solid #4e96f3;
+.table-data:not(:first-child){
+  text-align: left;
 }
 
-.styled-table tbody tr.active-row {
-  font-weight: bold;
-  color: #009879;
+/* Table Row */
+.table-row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--color-form-highlight); /* Add a bottom border */
 }
 
-/*Section5*/
-#prohead {
+/* Table Data & Header Item */
+.table-data{
+  flex: 1 1 20%;
   text-align: center;
 }
 
-#prolist {
-  margin-left: 30px;
-  font-size: 18px;
-  text-align: justify;
+
+
+/*Section5*/
+#proj{
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
 }
+
+#r1{
+  display: table-row;
+}
+
+#c1{
+  padding: 5px;
+  background-color: white;
+  color: #000000;
+  text-transform: capitalize;
+  text-align: justify;
+  
+}
+/* Your specific styling */
+.table {
+  border: none; /* Remove borders */
+}
+
+.table-row + .table-row {
+  border-top: none; /* Remove spacing between rows */
+}
+
+/* Additional styling (optional) */
+.d1 {
+  background-color: #f2f2f2;
+}
+
 
 #playicon {
   font-size: 25px;
